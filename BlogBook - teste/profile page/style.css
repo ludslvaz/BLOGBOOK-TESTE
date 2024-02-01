@@ -21,6 +21,9 @@
     margin-top: 25px;
     background-color: blueviolet;
 }
+#bannerUser{
+    max-width: 100%;
+}
 #imgUser{
     padding: 0 5%;
     margin-top: -80px;
@@ -33,11 +36,17 @@
 }
 .linkImg{
     width: 80%;
-    margin-left: 80px;
+    margin-left: 70px;
+}
+.nameId{
+    margin-left: 3%;
 }
 #userName{
     font-size: 16px;
     color: #0E122D;
     font-weight: bold;
-    margin-left: 12%;
+    margin-left: 5%;
+}
+.id{
+    font-size: 16px;
 }
