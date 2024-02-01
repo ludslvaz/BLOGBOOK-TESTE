@@ -35,8 +35,8 @@
     display: flex;
 }
 .linkImg{
-    width: 80%;
-    margin-left: 70px;
+    width: 60%;
+    margin-left: 60px;
 }
 .nameId{
     margin-left: 3%;
@@ -48,5 +48,12 @@
     margin-left: 5%;
 }
 .id{
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.bioUser{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 4%;
+    margin-bottom: auto;
 }
