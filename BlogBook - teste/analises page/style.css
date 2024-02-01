@@ -76,3 +76,40 @@ hr{
     line-height: 20px;
     margin-top: 5px;
 }
+.btnDelete{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-top: 30px;
+    padding: 10px 2px;
+    align-items: center;
+    border-radius: 7px;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgba(150, 156, 208, 0.20);
+    background-color: rgb(187, 182, 182);
+    /* background: rgba(255, 255, 255, 0.20); */
+    background-image: url(./imgs/icons8-trash-30.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 25px;
+}
+.btnFixar{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-top: 30px;
+    padding: 10px 2px;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgba(150, 156, 208, 0.20);
+    background-color: rgb(187, 182, 182);
+    /* background: rgba(255, 255, 255, 0.20); */
+    background-image: url(./imgs/icons8-pin-32.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 25px;
+}
