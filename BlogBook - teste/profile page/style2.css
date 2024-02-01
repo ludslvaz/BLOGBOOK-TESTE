@@ -6,7 +6,6 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-/* CONTEÚDO DO MEIO */
 .content-container{
     display: flex;
     flex: 1;
@@ -16,11 +15,57 @@
 }
 .container{
     max-width: 95%;
-    height: 100%;
+    /* height: 100%; */
     margin-left: 20px;
     flex-wrap: wrap;
     margin-top: 25px;
     /* background-color: blueviolet; */
+}
+#bannerUser{
+    max-width: 100%;
+}
+#imgUser{
+    padding: 0 5%;
+    margin-top: -80px;
+}
+.editarBtnImg{
+    padding-left: 50%;
+}
+.infos{
+    display: flex;
+    margin-bottom: 2%;
+}
+.linkImg{
+    width: 60%;
+}
+.nameId{
+    margin-left: 3%;
+}
+#userName{
+    font-size: 16px;
+    color: #0E122D;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.id{
+    font-size: 15px;
+    font-weight: 300;
+}
+.bioUser{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 4%;
+    margin-bottom: auto;
+}
+.containerNoticias{
+    margin-top: 30px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-containerNot{
+    /* background-color: blanchedalmond; */
 }
 #info_sigle{
     display: flex;
@@ -75,43 +120,4 @@ hr{
 .infoBook p{
     line-height: 20px;
     margin-top: 5px;
-}
-.notification{
-    background-color: rgb(212, 207, 207);
-    border-radius: 7px;
-}
-.btnDelete{
-    display: flex;
-    justify-content: center;
-    width: 45%;
-    /* margin-top: 30px; */
-    padding: 10px 95px 10px 2px;
-    align-items: center;
-    border-radius: 7px;
-    color: red;
-    font-size: 16px;
-    font-weight: 600;
-    border: 1px solid rgba(150, 156, 208, 0.20);
-    background-color: rgb(212, 207, 207);
-    background-image: url(./imgs/icons8-trash-30.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 25px;
-}
-.btnFixar{
-    display: flex;
-    justify-content: center;
-    width: 45%;
-    margin-top: 10px;
-    padding: 10px 2px;
-    align-items: center;
-    border-radius: 7px;
-    font-size: 16px;
-    font-weight: 600;
-    border: 1px solid rgba(150, 156, 208, 0.20);
-    background-color: rgb(212, 207, 207);
-    background-image: url(./imgs/icons8-pin-32.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 25px;
 }

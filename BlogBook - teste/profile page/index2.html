@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/leftNav.css">
-    <link rel="stylesheet" href="../css/rightNavSingle.css">
+    <link rel="stylesheet" href="../css/rightNav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!-- Boxiocns CND Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Análise Page</title>
+    <title>Profile Page</title>
 </head>
 <body>
     <header>
@@ -64,38 +64,20 @@
 
         <section class="content-container">
             <div class="container">
-                <span>Últimas Análises</span>
-                <hr>
-                <div class="containerAnalises">
-                    <div id="info_sigle">
-                        <div class="imgUser_sigle">
-                            <img src="./imgs/dogUser.svg" alt="" id="user_sigle">
-                        </div>
-                        <div class="dados">
-                        <span id="userName_single">Francisco oceano 54</span>
-                        <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
-                        <span class="ponto"></span>
-                        <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
-                        <div class="notification">
-                            <input type="button" value="Excluir" class="btnDelete">
-                            <input type="button" value="Fixar no seu perfil" class="btnFixar">
-                        </div>
-                        </div>
+                <img src="./imgs/imgs/bannerUser.svg" alt="" id="bannerUser">
+                <img src="./imgs/imgs/userDog.svg" alt="" id="imgUser">
+                <img src="./imgs/imgs/editarPerfil.svg" alt="" class="editarBtnImg">
+                <div class="infos">
+                    <div class="nameId">
+                        <span id="userName">Francisco oceano 54</span>
+                        <span class="id">ID:#3mr2u33248uyn4283</span>
                     </div>
-                    <div class="bookDados">
-                        <img src="./imgs/books/book1.svg" alt="">
-                        <div class="infoBook">
-                            <h3>Boa noite Punpun</h3>
-                            <p>Achei a obra bem construída,
-                               com um roteiro dinâmico que desenvolve
-                               todos os personagen bem para um primeiro 
-                               volume, o traço é realista e o cenário foi 
-                               bem apresentado para o leitor. Não tenho 
-                               pontos negativos para abordar, super recomendo.
-                            </p>
-                        </div>
-                    </div>
+                    <img src="./imgs/imgs/linkImg.svg" alt="" class="linkImg">
+                </div>
+                <span class="bioUser">Programador, universitário , bonito, gostoso, jogo bola e danço... </span>
+                <div class="containerNoticias">
+                    <h4 class="notícias">Notícias</h4>
+                    <h4 class="análises">Análises</h4>
                 </div>
                 <hr>
                 <div class="containerAnalises">
@@ -112,14 +94,13 @@
                         </div>
                     </div>
                     <div class="bookDados">
-                        <img src="./imgs/books/book4.svg" alt="">
+                        <img src="./imgs/books/book3.svg" alt="">
                         <div class="infoBook">
-                            <h3>O Demônio de Frankfurt</h3>
-                            <p>O autor usa eventos ocorridos na viagem
-                                à Alemanha misturados as suas lembranças
-                                e experiências de alguém que nasceu e cresceu
-                                em meio à violência na periferia pra criar uma
-                                história que é uma espécie de autoficção...
+                            <h3>Precisamos falar sobre o kevin </h3>
+                            <p>Precisamos falar sobre o Kevin é um romance 
+                                de ficção publicado em 2003, escrito por Lionel 
+                                Shriver, que trata sobre um massacre escolar fictício,
+                                segundo a perspectiva da mãe do assassino, Eva Khatchadourian, que ...
                             </p>
                         </div>
                     </div>
@@ -177,82 +158,87 @@
                         </div>
                     </div>
                 </div>
-                <hr>
-                <div class="containerAnalises">
-                    <div id="info_sigle">
-                        <div class="imgUser_sigle">
-                            <img src="./imgs/dogUser.svg" alt="" id="user_sigle">
-                        </div>
-                        <div class="dados">
-                        <span id="userName_single">Francisco oceano 54</span>
-                        <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
-                        <span class="ponto"></span>
-                        <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
-                        </div>
-                    </div>
-                    <div class="bookDados">
-                        <img src="./imgs/books/book3.svg" alt="">
-                        <div class="infoBook">
-                            <h3>Precisamos falar sobre o kevin </h3>
-                            <p>Precisamos falar sobre o Kevin é um romance 
-                                de ficção publicado em 2003, escrito por Lionel 
-                                Shriver, que trata sobre um massacre escolar fictício,
-                                segundo a perspectiva da mãe do assassino, Eva Khatchadourian, que ...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <hr>
             </div>
         </section>
 
         <nav class="right-nav">
-            <div class="OutrasNoticias">
-                <div class="titleOutrasNot">
-                    <span>Outras Notícias</span>
-                </div>
-                <hr class="rowOutrasNoticias">
-                <div class="noticias">
-                    <img src="./imgs/outrasNotícias.img/img1.svg" alt="">
-                    <div id="txtOutrasNoticias">
-                        <span>
-                            Cinco ônibus escolares são incendiados
-                             em Vespasiano (MG)
-                        </span>
+            <div class="initial">
+                <span class="name_top2">Análises Relevantes</span>
+                <p class="mais2">Mais</p>
+            </div>
+            <hr class="rowBooks">
+            <div class="box_books">
+                <img src="./imgs/book1.svg" alt="">
+                <div class="info_book">
+                    <h4>Boa noite Punpun</h4>
+                    <div class="elements_book">
+                        <div class="important">
+                            <img src="./imgs/user.svg" alt="">
+                            <span>Frank Sea</span>
+                        </div>
+                        <p>The most overrated manga i ever read</p>
                     </div>
                 </div>
-                <div class="noticias">
-                    <img src="./imgs/outrasNotícias.img/img2.svg" alt="">
-                    <div id="txtOutrasNoticias">
-                        <span>
-                            Cinco ônibus escolares são incendiados
-                             em Vespasiano (MG)
-                        </span>
+            </div>
+            <hr class="row_right">
+            <div class="box_books">
+                <img src="./imgs/book2.svg" alt="">
+                <div class="info_book">
+                    <h4>Boa noite Punpun</h4>
+                    <div class="elements_book">
+                        <div class="important">
+                            <img src="./imgs/user.svg" alt="">
+                            <span>Frank Sea</span>
+                        </div>
+                        <p>The most overrated manga i ever read</p>
                     </div>
                 </div>
-                <div class="noticias">
-                    <img src="./imgs/outrasNotícias.img/img3.svg" alt="">
-                    <div id="txtOutrasNoticias">
-                        <span>
-                            Cinco ônibus escolares são incendiados
-                             em Vespasiano (MG)
-                        </span>
+            </div>
+            <hr class="row_right">
+            <div class="box_books">
+                <img src="./imgs/book3.svg" alt="">
+                <div class="info_book">
+                    <h4>Boa noite Punpun</h4>
+                    <div class="elements_book">
+                        <div class="important">
+                            <img src="./imgs/user.svg" alt="">
+                            <span>Frank Sea</span>
+                        </div>
+                        <p>The most overrated manga i ever read</p>
                     </div>
                 </div>
-                <div class="noticias">
-                    <img src="./imgs/outrasNotícias.img/img4.svg" alt="">
-                    <div id="txtOutrasNoticias">
-                        <span>
-                            Cinco ônibus escolares são incendiados
-                             em Vespasiano (MG)
-                        </span>
+            </div>
+            <hr class="row_right">
+            <div class="box_books">
+                <img src="./imgs/book1.svg" alt="">
+                <div class="info_book">
+                    <h4>Boa noite Punpun</h4>
+                    <div class="elements_book">
+                        <div class="important">
+                            <img src="./imgs/user.svg" alt="">
+                            <span>Frank Sea</span>
+                        </div>
+                        <p>The most overrated manga i ever read</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="row_right">
+            <div class="box_books">
+                <img src="./imgs/book1.svg" alt="">
+                <div class="info_book">
+                    <h4>Boa noite Punpun</h4>
+                    <div class="elements_book">
+                        <div class="important">
+                            <img src="./imgs/user.svg" alt="">
+                            <span>Frank Sea</span>
+                        </div>
+                        <p>The most overrated manga i ever read</p>
                     </div>
                 </div>
             </div>
         </nav>
     </main>
+
     <footer>
         <div class="container_footer">
             <div class="row_footer">
@@ -266,12 +252,11 @@
                         <li><i class='bx bxl-linkedin-square color'></i></li>
                         <li><i class='bx bxl-facebook-circle color'></i></li>
                     </div>
-                    <a href=""><img src="./imgs/arrow.svg" alt="" id="arrow_footer"></a>
+                    <a href=""><img src="./imgs/arrow.svg" alt="" class="arrow_footer"></a>
                 </ul>
             </div>
         </div>
         <span class="span_footer">© 2024 Oxybok. Todos os direitos reservados</span>
     </footer>
-    <script src=""></script>
 </body>
 </html>
