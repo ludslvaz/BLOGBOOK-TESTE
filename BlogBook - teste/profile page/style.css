@@ -33,6 +33,7 @@
 }
 .infos{
     display: flex;
+    margin-bottom: 2%;
 }
 .linkImg{
     width: 60%;
