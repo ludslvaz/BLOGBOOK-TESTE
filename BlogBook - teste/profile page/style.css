@@ -11,15 +11,15 @@
     flex: 1;
     padding: 10px;
     /* justify-content: center; */
-    background-color: #2A3DA3;
+    /* background-color: #2A3DA3; */
 }
 .container{
     max-width: 95%;
-    height: 100%;
+    /* height: 100%; */
     margin-left: 20px;
     flex-wrap: wrap;
     margin-top: 25px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 #bannerUser{
     max-width: 100%;
@@ -33,10 +33,10 @@
 }
 .infos{
     display: flex;
+    margin-bottom: 2%;
 }
 .linkImg{
     width: 60%;
-    margin-left: 60px;
 }
 .nameId{
     margin-left: 3%;
@@ -56,4 +56,51 @@
     font-weight: 600;
     margin-left: 4%;
     margin-bottom: auto;
+}
+.containerNoticias{
+    margin-top: 30px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-containerNot{
+    /* background-color: blanchedalmond; */
+}
+.card {
+    display: flex;
+    cursor: pointer;
+}
+.imgcard{
+    margin-top: 33px;
+    width: 205px;
+    height: 149px;
+}
+.info{
+    flex: 1;
+    padding: 20px;
+    padding-left: 0;
+    height: 149px;
+    width: 205px;
+    margin-top: 12px;
+}
+.text-container {
+    color: black;
+    background-color: #F0F4FA;
+    padding: 16px;
+    height: 150px;
+    overflow: hidden;
+}
+.text-container h2{
+    font-size: 17px;
+    line-height: 20px;
+}
+.text-container p{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.text-container p span{
+    color: #2A3DA3;
+    font-weight: bold;
 }
