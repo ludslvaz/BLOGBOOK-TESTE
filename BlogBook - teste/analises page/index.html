@@ -24,8 +24,8 @@
         </div>
         </input>
         <div class="login_div">
-            <span class="to-enter">Entrar</span>
-            <span class="create_cont">Crie uma conta</span>
+            <input type="button" value="Entrar" class="to-enter" id="entrarBtn">
+            <input type="button" value="Crie uma conta" class="create_cont" id="createContBtn">
             <img src="./imgs/user.svg" alt="" class="user">
         </div>
     </header>
@@ -41,7 +41,7 @@
                 <li>
                     <a href="#" class="color">
                         <i class='bx bx-edit'></i>
-                        <span class="link_name">Análises</span>
+                        <input type="button" value="Análises" class="link_name" id="analises">
                     </a>
                 </li>
                 <li>
@@ -76,8 +76,8 @@
                         <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
                         <span class="ponto"></span>
                         <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
-                        <div class="notification">
+                        <button class="trêsPontinhos" onclick="toggleNotification('notificationDiv1')">...</button>
+                        <div class="notification" id="notificationDiv1">
                             <input type="button" value="Excluir" class="btnDelete">
                             <input type="button" value="Fixar no seu perfil" class="btnFixar">
                         </div>
@@ -108,7 +108,11 @@
                         <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
                         <span class="ponto"></span>
                         <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
+                        <button class="trêsPontinhos" onclick="toggleNotification('notificationDiv2')">...</button>
+                        <div class="notification" id="notificationDiv2">
+                            <input type="button" value="Excluir" class="btnDelete">
+                            <input type="button" value="Fixar no seu perfil" class="btnFixar">
+                        </div>
                         </div>
                     </div>
                     <div class="bookDados">
@@ -135,7 +139,11 @@
                         <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
                         <span class="ponto"></span>
                         <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
+                        <button class="trêsPontinhos" onclick="toggleNotification('notificationDiv3')">...</button>
+                        <div class="notification" id="notificationDiv3">
+                            <input type="button" value="Excluir" class="btnDelete">
+                            <input type="button" value="Fixar no seu perfil" class="btnFixar">
+                        </div>
                         </div>
                     </div>
                     <div class="bookDados">
@@ -162,7 +170,11 @@
                         <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
                         <span class="ponto"></span>
                         <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
+                        <button class="trêsPontinhos" onclick="toggleNotification('notificationDiv4')">...</button>
+                        <div class="notification" id="notificationDiv4">
+                            <input type="button" value="Excluir" class="btnDelete">
+                            <input type="button" value="Fixar no seu perfil" class="btnFixar">
+                        </div>
                         </div>
                     </div>
                     <div class="bookDados">
@@ -188,7 +200,11 @@
                         <span id="idName_single"><span class="wordId">ID:</span> #3mr2u33248uyn4283</span>
                         <span class="ponto"></span>
                         <span id="dia_single">14 agosto</span>
-                        <button class="trêsPontinhos">...</button>
+                        <button class="trêsPontinhos" onclick="toggleNotification('notificationDiv5')">...</button>
+                        <div class="notification" id="notificationDiv5">
+                            <input type="button" value="Excluir" class="btnDelete">
+                            <input type="button" value="Fixar no seu perfil" class="btnFixar">
+                        </div>
                         </div>
                     </div>
                     <div class="bookDados">
@@ -272,6 +288,8 @@
         </div>
         <span class="span_footer">© 2024 Oxybok. Todos os direitos reservados</span>
     </footer>
-    <script src=""></script>
+    <script src="script.js"></script>
+    <script src="../js/scriptHeader.js"></script>
+    <script src="../js/scriptLeftNav.js"></script>
 </body>
 </html>
