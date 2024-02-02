@@ -72,6 +72,8 @@ header{
     margin: 15px 15px;
     margin-right: 25px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 .create_cont{
     color: #2A3DA3;
