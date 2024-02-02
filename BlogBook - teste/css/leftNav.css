@@ -37,6 +37,12 @@ i {
     position: relative;
     top: 12px;
     margin-left: 10px;
+    border: none;
+    background: none;
+}
+.link_name:hover{
+    color: #2A3DA3;
+    font-weight: bold;
 }
 .color:hover{
     color: #2A3DA3;
