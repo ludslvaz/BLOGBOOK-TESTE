@@ -77,15 +77,23 @@ hr{
     margin-top: 5px;
 }
 .notification{
+    position: relative;
     background-color: rgb(212, 207, 207);
     border-radius: 7px;
+    max-width: 50%;
+    max-height: 80%;
+    left: 55%;
+    z-index: 1;
+    display: none;
+}
+#notificationDiv{
+    display: none;
 }
 .btnDelete{
     display: flex;
     justify-content: center;
-    width: 45%;
-    /* margin-top: 30px; */
-    padding: 10px 95px 10px 2px;
+    width: 90%;
+    padding: 8px 20px;
     align-items: center;
     border-radius: 7px;
     color: red;
@@ -97,11 +105,15 @@ hr{
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 .btnFixar{
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 90%;
     margin-top: 10px;
     padding: 10px 2px;
     align-items: center;
@@ -114,4 +126,8 @@ hr{
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 25px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
 }
