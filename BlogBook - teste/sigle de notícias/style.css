@@ -37,9 +37,7 @@
 .dados{
     margin-top: 15px;
 }
-#idName_single{
-    margin-left: 5px;
-}
+
 .wordId{
     font-weight: 600;
 }
@@ -74,4 +72,10 @@ hr{
     margin-top: 25px;
     max-width: 100%;
     /* margin-left: 40px; */
+}
+#user_sigle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
 }

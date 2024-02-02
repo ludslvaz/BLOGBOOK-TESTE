@@ -39,8 +39,10 @@ hr{
 .banner{
     margin-top: 40px;
     cursor: pointer;
-    width: 100%;
+    width: 43.455vw;
+    height: 46.302vh;
 }
+
 .row2{
     border-color: rgba(0, 0, 0, 0.361);
     margin-top: 25px;
@@ -87,4 +89,12 @@ hr{
 .text-container p span{
     color: #2A3DA3;
     font-weight: bold;
+}
+h3{
+    margin-top: 290px;
+    margin-left: 10px;
+    font-size: 32px;
+    position: absolute;
+    text-shadow: 1px 1px 1px black;
+    color: #ffffff;
 }
