@@ -2,35 +2,19 @@ import FluxRequest from "../lib/Flux/FluxyV1/FluxAPI/lib/launcher/FluxRequest.mj
 import { Simplifier } from "../lib/Flux/FluxyV1/FluxAPI/lib/util/Simplifier.mjs";
  
 const    simplifier = new Simplifier()
-
-const    noticys = Object.values(document.getElementsByClassName('card'));
+const    fluxBlog = new FluxRequest("http://localhost:8080/blog")
+const    noticys = document.getElementsByClassName('card')
 const    noticys_img = document.getElementsByClassName('imgcard')
 const    noticys_title = document.getElementsByClassName('title_card')
 const    noticys_pg = document.getElementsByClassName('pg_card')
 const    banner = document.getElementById('bannerMain');
-const    titleBanner = document.querySelector('h3')
 const 
     size = noticys.length,
     storage = localStorage,
-    fluxBlog = new FluxRequest("http://localhost:8080/blog"),
-    response = Object.values(await fluxBlog.fluxStart());
-    const responseNoticy = response.filter(function (element) { return (element.type) === "NOTICIA"})
-    
+    response = await fluxBlog.fluxStart()
+    console.log(response);
 
-    const bannerMain = response[simplifier.random(size)]
-    // console.log(bannerMain)
-    // banner.src = bannerMain.pathIcon
-    titleBanner.textContent = bannerMain.title
-
-
-    
-    noticys.forEach( elements => {
-        let idNoticy = 0
-                   idNoticy++;
-                   console.log(idNoticy)
-            // elements.setAttribute('data-id',id)
-
-    })
+    banner.src = response[simplifier.random(response.length)].pathIcon
     
     for (let index = 0; index < size; index++) {
         const element = noticys[index];
@@ -45,6 +29,8 @@ const
             open('http://127.0.0.1:5500/sigle%20de%20not%C3%ADcias/index.html')
         })
     }
-        
-        
-
+    for (let id = 0; id <= size; id++){ 
+        noticys_img[id].src = await response[id].pathIcon;
+        noticys_title[id].textContent = await response[id].title;
+        noticys_pg[id].textContent = await response[id].comentario;
+        noticys[id].dataset.id = response[id].title  }
