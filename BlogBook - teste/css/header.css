@@ -84,4 +84,6 @@ header{
     margin: 15px 15px;
     margin-right: 50px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
