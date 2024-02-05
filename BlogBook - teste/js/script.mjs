@@ -20,7 +20,7 @@ const
         const element = noticys[index];
         element.addEventListener('click',
         async (event) => {
-            const a = null 
+            const a = 1
             const 
                 post = event.currentTarget,
                 request = new FluxRequest(`http://localhost:8080/blog/${post.dataset.id}`),
