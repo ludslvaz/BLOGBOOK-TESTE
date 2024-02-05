@@ -20,13 +20,14 @@ const
         const element = noticys[index];
         element.addEventListener('click',
         async (event) => {
+            const a = null 
             const 
                 post = event.currentTarget,
                 request = new FluxRequest(`http://localhost:8080/blog/${post.dataset.id}`),
                 promise =  await request.fluxStart();
     
             storage.setItem('blog',JSON.stringify(promise[0]))
-            open('http://127.0.0.1:5500/sigle%20de%20not%C3%ADcias/index.html')
+            open('../sigle de notícias/index.html')
         })
     }
     for (let id = 0; id <= size; id++){ 
